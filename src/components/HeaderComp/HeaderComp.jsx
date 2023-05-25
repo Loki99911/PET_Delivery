@@ -1,14 +1,19 @@
-import { NavLink } from 'react-router-dom';
+import {
+  Header,
+  HeaderLink,
+  HeaderList,
+  HeaderWraper,
+} from './HeaderComp.styled';
 
 export const HeaderComp = () => {
   return (
-    <ul>
-      <li>
-        <NavLink to={'/'}>Shop</NavLink>
-      </li>
-      <li>
-        <NavLink to={'/cart'}>ShoppingCart</NavLink>
-      </li>
-    </ul>
+    <Header>
+      <HeaderWraper>
+        <HeaderList>
+          <HeaderLink to={'/main'}>Shop</HeaderLink>
+          <HeaderLink to={'/cart'}>ShoppingCart</HeaderLink>
+        </HeaderList>
+      </HeaderWraper>
+    </Header>
   );
 };

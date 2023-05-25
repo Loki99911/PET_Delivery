@@ -1,0 +1,204 @@
+{
+  "restaurants": [
+    {
+      "restaurantName": "McDonald's",
+      "items": [
+        {
+          "name": "Hamburger",
+          "price": 2.99,
+          "photo": "mcdonalds_hamburger.jpg"
+        },
+        {
+          "name": "Cheeseburger",
+          "price": 3.49,
+          "photo": "mcdonalds_cheeseburger.jpg"
+        },
+        {
+          "name": "Fries",
+          "price": 1.99,
+          "photo": "mcdonalds_fries.jpg"
+        },
+        {
+          "name": "Soft Drink",
+          "price": 1.49,
+          "photo": "mcdonalds_soft_drink.jpg"
+        },
+        {
+          "name": "Chicken McNuggets",
+          "price": 4.99,
+          "photo": "mcdonalds_chicken_mcnuggets.jpg"
+        },
+        {
+          "name": "Big Mac",
+          "price": 5.49,
+          "photo": "mcdonalds_big_mac.jpg"
+        },
+        {
+          "name": "Filet-O-Fish",
+          "price": 3.99,
+          "photo": "mcdonalds_filet_o_fish.jpg"
+        }
+      ]
+    },
+    {
+      "restaurantName": "Burger King",
+      "items": [
+        {
+          "name": "Whopper",
+          "price": 4.49,
+          "photo": "burgerking_whopper.jpg"
+        },
+        {
+          "name": "Cheeseburger",
+          "price": 3.99,
+          "photo": "burgerking_cheeseburger.jpg"
+        },
+        {
+          "name": "Fries",
+          "price": 2.49,
+          "photo": "burgerking_fries.jpg"
+        },
+        {
+          "name": "Soft Drink",
+          "price": 1.99,
+          "photo": "burgerking_soft_drink.jpg"
+        },
+        {
+          "name": "Chicken Sandwich",
+          "price": 4.99,
+          "photo": "burgerking_chicken_sandwich.jpg"
+        },
+        {
+          "name": "Onion Rings",
+          "price": 2.99,
+          "photo": "burgerking_onion_rings.jpg"
+        },
+        {
+          "name": "Whopper Jr.",
+          "price": 3.49,
+          "photo": "burgerking_whopper_jr.jpg"
+        }
+      ]
+    },
+    {
+      "restaurantName": "Subway",
+      "items": [
+        {
+          "name": "6-Inch Sub",
+          "price": 5.99,
+          "photo": "subway_6inch_sub.jpg"
+        },
+        {
+          "name": "Footlong Sub",
+          "price": 8.99,
+          "photo": "subway_footlong_sub.jpg"
+        },
+        {
+          "name": "Chips",
+          "price": 1.49,
+          "photo": "subway_chips.jpg"
+        },
+        {
+          "name": "Soft Drink",
+          "price": 1.99,
+          "photo": "subway_soft_drink.jpg"
+        },
+        {
+          "name": "Italian BMT",
+          "price": 7.49,
+          "photo": "subway_italian_bmt.jpg"
+        },
+        {
+          "name": "Turkey Breast",
+          "price": 6.49,
+          "photo": "subway_turkey_breast.jpg"
+        },
+        {
+          "name": "Veggie Delite",
+          "price": 5.99,
+          "photo": "subway_veggie_delite.jpg"
+        }
+      ]
+    },
+    {
+      "restaurantName": "KFC",
+      "items": [
+        {
+          "name": "Original Recipe Chicken",
+          "price": 5.99,
+          "photo": "kfc_original_recipe_chicken.jpg"
+        },
+        {
+          "name": "Chicken Tenders",
+          "price": 6.99,
+          "photo": "kfc_chicken_tenders.jpg"
+        },
+        {
+          "name": "Fries",
+          "price": 2.99,
+          "photo": "kfc_fries.jpg"
+        },
+        {
+          "name": "Soft Drink",
+          "price": 1.99,
+          "photo": "kfc_soft_drink.jpg"
+        },
+        {
+          "name": "Mashed Potatoes",
+          "price": 3.49,
+          "photo": "kfc_mashed_potatoes.jpg"
+        },
+        {
+          "name": "Coleslaw",
+          "price": 2.49,
+          "photo": "kfc_coleslaw.jpg"
+        },
+        {
+          "name": "Biscuit",
+          "price": 1.49,
+          "photo": "kfc_biscuit.jpg"
+        }
+      ]
+    },
+    {
+      "restaurantName": "Pizza Hut",
+      "items": [
+        {
+          "name": "Pepperoni Pizza",
+          "price": 12.99,
+          "photo": "pizzahut_pepperoni_pizza.jpg"
+        },
+        {
+          "name": "Margherita Pizza",
+          "price": 11.99,
+          "photo": "pizzahut_margherita_pizza.jpg"
+        },
+        {
+          "name": "Supreme Pizza",
+          "price": 14.99,
+          "photo": "pizzahut_supreme_pizza.jpg"
+        },
+        {
+          "name": "Cheese Breadsticks",
+          "price": 6.99,
+          "photo": "pizzahut_cheese_breadsticks.jpg"
+        },
+        {
+          "name": "Garlic Parmesan Wings",
+          "price": 9.99,
+          "photo": "pizzahut_garlic_parmesan_wings.jpg"
+        },
+        {
+          "name": "Caesar Salad",
+          "price": 7.99,
+          "photo": "pizzahut_caesar_salad.jpg"
+        },
+        {
+          "name": "Tiramisu",
+          "price": 5.99,
+          "photo": "pizzahut_tiramisu.jpg"
+        }
+      ]
+    }
+  ]
+}
