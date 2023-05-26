@@ -11,7 +11,7 @@ export const HeaderComp = () => {
       <HeaderWraper>
         <HeaderList>
           <HeaderLink to={'/main'}>Shop</HeaderLink>
-          <HeaderLink to={'/cart'}>ShoppingCart</HeaderLink>
+          <HeaderLink to={'/cart'}>Shopping Cart</HeaderLink>
         </HeaderList>
       </HeaderWraper>
     </Header>

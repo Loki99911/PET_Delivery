@@ -1,37 +1,50 @@
 // import { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 import { Shop } from './Shop/Shop';
-import { ShoppingCart } from './ShoppingCart/ShoppingCart';
 import restaurantsData from '../data/restaurants.json';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { RestMenu } from './RestMenu/RestMenu';
+import ShoppingCart from './ShoppingCart/ShoppingCart';
 
 const ShopContext = React.createContext();
+const MealsContext = React.createContext();
 export const App = () => {
-  // const [restaurants, setRestaurants] = useState([]);
-  // useEffect(() => {
-  //   setRestaurants(restaurantsData);
-  // }, []);
-// const [selectedRest, setSelectedRest] = useState(
-//   restaurantsData.restaurants[0].restaurantName
-// );
+  const [meals, setMeals] = useState([]);
+  useEffect(() => {
+    const currentStorage = JSON.parse(localStorage.getItem('meals'));
+    if (currentStorage) {
+      setMeals(currentStorage);
+    }
+  },[]);
+
+  useEffect(() => {
+    localStorage.setItem('meals', JSON.stringify(meals));
+  }, [meals]);
 
   return (
     <ShopContext.Provider value={restaurantsData}>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route path="main" element={<Shop/>}>
-            <Route
-              path={`:activeRestName`}
-              element={<RestMenu />}
-            />
+      <MealsContext.Provider value={{ meals, setMeals }}>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Navigate to="main" />} />
+            <Route path="main" element={<Shop />}>
+              <Route
+                index
+                element={
+                  <Navigate
+                    to={restaurantsData.restaurants[0].restaurantName}
+                  />
+                }
+              />
+              <Route path={`:activeRestName`} element={<RestMenu />} />
+            </Route>
+            <Route path="cart" element={<ShoppingCart />} />
           </Route>
-          <Route path="cart" element={<ShoppingCart />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </MealsContext.Provider>
     </ShopContext.Provider>
   );
 };
 
-export { ShopContext };
+export { ShopContext, MealsContext };
