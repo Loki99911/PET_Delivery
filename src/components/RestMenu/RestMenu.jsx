@@ -6,9 +6,9 @@ import { MenuWrapper } from './RestMenu.styled';
 
 export const RestMenu = () => {
   const param = useParams();
-  const { restaurants } = useContext(ShopContext);
+  const { shops } = useContext(ShopContext);
 
-  const restaurant = restaurants.find(
+  const restaurant = shops.restaurants.find(
     rest => rest.restaurantName === param.activeRestName
   );
   const menu = restaurant.items;

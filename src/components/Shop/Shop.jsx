@@ -4,7 +4,8 @@ import { useContext } from 'react';
 import { Outlet } from 'react-router-dom';
 
 export const Shop = () => {
-  const { restaurants } = useContext(ShopContext);
+  const { shops } = useContext(ShopContext);
+  const restaurants = shops.restaurants;
 
   const restNames = restaurants.map(restaurant => restaurant.restaurantName);
   return (

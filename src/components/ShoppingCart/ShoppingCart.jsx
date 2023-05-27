@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Formik } from 'formik';
 import shortid from 'shortid';
 import {
@@ -12,17 +12,49 @@ import {
   FormCart,
   SubmitBtnBlock,
   FormText,
+  FormCardDelBtn,
+  FormCardImg,
+  FormCardInput,
+  FormCardInputWrapper,
+  FormCardTitle,
+  FormCardWrapper,
 } from './ShoppingCart.styled';
 import { MealsContext } from 'components/App';
-import { FormCard } from 'components/FormCard/FormCard';
+import { FiTrash2 } from 'react-icons/fi';
+const MealsValuesContext = React.createContext();
 
 const ShoppingCart = () => {
   const nameID = shortid.generate();
   const emailID = shortid.generate();
   const phoneID = shortid.generate();
   const adressID = shortid.generate();
-  const { meals } = useContext(MealsContext);
-  const totalValue = 100500
+  const { meals, setMeals } = useContext(MealsContext);
+  const [totalValue, setTotalValue] = useState(0);
+
+  useEffect(() => {
+    const currentValue = meals.reduce(
+      (accumulator, el) => accumulator + el.price * 100 * +el.quantity,
+      0
+    );
+    const roundedValue = Math.round(currentValue) / 100;
+    setTotalValue(roundedValue);
+  }, [meals]);
+
+  const handleChangeValue = (event, itemId) => {
+    setMeals(prev => {
+      const currentMeal = prev.find(meal => meal.itemId === itemId);
+      const objIndex = prev.indexOf(currentMeal);
+      currentMeal.quantity = event.target.value;
+      prev.splice(objIndex, 1, currentMeal);
+      return [...prev];
+    });
+  };
+
+  const deleteFormCard = id => {
+    const resetMeals = meals.filter(el => el.itemId !== id);
+    setMeals(resetMeals);
+  };
+
   return (
     <FormLayout>
       <FormWrapper>
@@ -45,12 +77,10 @@ const ShoppingCart = () => {
             return errors;
           }}
           onSubmit={(values, { setSubmitting, resetForm }) => {
-            // Обработка отправки формы
-            console.log(values);
+            console.log(values,meals);
             resetForm();
-
-            // Установка флага isSubmitting в false после завершения отправки формы
             setSubmitting(false);
+            setMeals([]);
           }}
         >
           {({
@@ -119,8 +149,25 @@ const ShoppingCart = () => {
           )}
         </Formik>
         <FormCart>
-          {meals.map(meal => (
-            <FormCard prop={meal} key={shortid.generate()} />
+          {meals.map(({ itemId, photo, name, price, quantity }) => (
+            <FormCardWrapper key={name}>
+              <FormCardImg src={`${photo}`} alt={`${photo}`} />
+              <FormCardInputWrapper>
+                <FormCardTitle>{name}</FormCardTitle>
+                <FormCardTitle>{price}</FormCardTitle>
+                <FormCardInput
+                  type="number"
+                  value={quantity}
+                  onChange={event => handleChangeValue(event, itemId, price)}
+                  step="1"
+                  min="0"
+                  max="10"
+                />
+                <FormCardDelBtn onClick={() => deleteFormCard(itemId)}>
+                  <FiTrash2 />
+                </FormCardDelBtn>
+              </FormCardInputWrapper>
+            </FormCardWrapper>
           ))}
         </FormCart>
       </FormWrapper>
@@ -129,3 +176,4 @@ const ShoppingCart = () => {
 };
 
 export default ShoppingCart;
+export { MealsValuesContext };

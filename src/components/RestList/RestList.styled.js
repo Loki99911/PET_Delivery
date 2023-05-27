@@ -24,14 +24,21 @@ export const RestLink = styled(NavLink)`
   background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   padding: 10px;
-  transition: color 350ms liner;
+  transition: all 350ms linear;
   border-radius: 5px;
+
   &:hover {
     color: #c76cf5;
     background-color: rgba(255, 255, 255, 0.9);
   }
+
   &.active {
     color: #cc17e8;
     background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  &:not(.active) {
+    pointer-events: ${props => (props.meals.length > 0 ? 'none' : 'auto')};
+    opacity: ${props => (props.meals.length > 0 ? 0.5 : 1)};
   }
 `;

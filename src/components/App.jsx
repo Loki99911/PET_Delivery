@@ -10,20 +10,21 @@ import ShoppingCart from './ShoppingCart/ShoppingCart';
 const ShopContext = React.createContext();
 const MealsContext = React.createContext();
 export const App = () => {
+  const [shops, setShops] = useState(restaurantsData);
   const [meals, setMeals] = useState([]);
   useEffect(() => {
     const currentStorage = JSON.parse(localStorage.getItem('meals'));
     if (currentStorage) {
       setMeals(currentStorage);
     }
-  },[]);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('meals', JSON.stringify(meals));
   }, [meals]);
 
   return (
-    <ShopContext.Provider value={restaurantsData}>
+    <ShopContext.Provider value={{ shops, setShops }}>
       <MealsContext.Provider value={{ meals, setMeals }}>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
@@ -31,11 +32,7 @@ export const App = () => {
             <Route path="main" element={<Shop />}>
               <Route
                 index
-                element={
-                  <Navigate
-                    to={restaurantsData.restaurants[0].restaurantName}
-                  />
-                }
+                element={<Navigate to={shops.restaurants[0].restaurantName} />}
               />
               <Route path={`:activeRestName`} element={<RestMenu />} />
             </Route>
