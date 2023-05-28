@@ -12,6 +12,7 @@ export const RestMenu = () => {
     rest => rest.restaurantName === param.activeRestName
   );
   const menu = restaurant.items;
+  console.log(menu);
   return (
     <MenuWrapper>
       {menu.map(meal => (
