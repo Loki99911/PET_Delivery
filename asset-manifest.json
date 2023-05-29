@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PET_Delivery/static/css/main.d3421522.css",
-    "main.js": "/PET_Delivery/static/js/main.375913bc.js",
+    "main.js": "/PET_Delivery/static/js/main.dcb06f60.js",
     "static/media/grass.jpg": "/PET_Delivery/static/media/grass.04af1efadc247b08f2f7.jpg",
     "index.html": "/PET_Delivery/index.html",
     "main.d3421522.css.map": "/PET_Delivery/static/css/main.d3421522.css.map",
-    "main.375913bc.js.map": "/PET_Delivery/static/js/main.375913bc.js.map"
+    "main.dcb06f60.js.map": "/PET_Delivery/static/js/main.dcb06f60.js.map"
   },
   "entrypoints": [
     "static/css/main.d3421522.css",
-    "static/js/main.375913bc.js"
+    "static/js/main.dcb06f60.js"
   ]
 }
