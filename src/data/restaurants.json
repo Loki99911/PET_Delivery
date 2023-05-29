@@ -1,277 +1,276 @@
 {
   "restaurants": [
     {
-      
-      "restaurantID":1,
+      "restaurantID": 1,
       "restaurantName": "McDonald's",
       "items": [
         {
-          "itemId":"McDonalds's_1",
+          "itemId": "McDonalds's_1",
           "name": "Hamburger",
           "price": 2.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Hamburger-new:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
         },
         {
-          "itemId":"McDonalds's_2",
+          "itemId": "McDonalds's_2",
           "name": "Cheeseburger",
           "price": 3.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Cheeseburger-new:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
         },
         {
-          "itemId":"McDonalds's_3",
+          "itemId": "McDonalds's_3",
           "name": "Fries",
           "price": 1.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_6050_SmallFrenchFries_Standing_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
-          "itemId":"McDonalds's_4",
+          "itemId": "McDonalds's_4",
           "name": "Soft Drink",
           "price": 1.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202112_0521_MediumCoke_Glass_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
-          "itemId":"McDonalds's_5",
+          "itemId": "McDonalds's_5",
           "name": "Chicken McNuggets",
           "price": 4.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Chicken-McNuggets-6-pieces-new:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
         },
         {
-          "itemId":"McDonalds's_6",
+          "itemId": "McDonalds's_6",
           "name": "Big Mac",
           "price": 5.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Big-Mac-2:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
         },
         {
-          "itemId":"McDonalds's_7",
+          "itemId": "McDonalds's_7",
           "name": "Filet-O-Fish",
           "price": 3.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202001_5926_Filet-O-Fish_HalfSlice_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         }
       ]
     },
     {
-      "restaurantID":2,
+      "restaurantID": 2,
       "restaurantName": "Burger King",
       "items": [
         {
-          "itemId":"King_1",
+          "itemId": "King_1",
           "name": "Whopper",
           "price": 4.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://www.burgerking.ee/images/optimized/products/whopper-desktop-d8cee499661a700caa53bb89104c0e37.png"
         },
         {
-          "itemId":"King_2",
+          "itemId": "King_2",
           "name": "Cheeseburger",
           "price": 3.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://www.burgerking.ee/images/optimized/products/king-jr-cheeseburger-desktop-e7c1abfcac711a1c2d27b7515da19cbd.png"
         },
         {
-          "itemId":"King_3",
+          "itemId": "King_3",
           "name": "Fries",
           "price": 2.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://www.burgerking.ee/images/optimized/products/fries-large-desktop-05dbf776770eaa0c90ee930295388c65.png"
         },
         {
-          "itemId":"King_4",
+          "itemId": "King_4",
           "name": "Soft Drink",
           "price": 1.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202112_0521_MediumCoke_Glass_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
-          "itemId":"King_5",
+          "itemId": "King_5",
           "name": "Chicken Sandwich",
           "price": 4.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://bk-latam-prod.s3.amazonaws.com/sites/burgerking.bs/files/New_OCS_detail.png"
         },
         {
-          "itemId":"King_6",
+          "itemId": "King_6",
           "name": "Onion Rings",
           "price": 2.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://www.seekpng.com/png/detail/52-522297_onion-rings-burger-king-onion-rings.png"
         },
         {
-          "itemId":"King_7",
+          "itemId": "King_7",
           "name": "Whopper Jr.",
           "price": 3.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "data:image/jpeg;base64,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"
         }
       ]
     },
     {
-      "restaurantID":3,
+      "restaurantID": 3,
       "restaurantName": "Subway",
       "items": [
         {
-          "itemId":"Subway_1",
+          "itemId": "Subway_1",
           "name": "6-Inch Sub",
           "price": 5.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "subway_6inch_sub.jpg"
         },
         {
-          "itemId":"Subway_2",
+          "itemId": "Subway_2",
           "name": "Footlong Sub",
           "price": 8.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "subway_footlong_sub.jpg"
         },
         {
-          "itemId":"Subway_3",
+          "itemId": "Subway_3",
           "name": "Chips",
           "price": 1.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "subway_chips.jpg"
         },
         {
-          "itemId":"Subway_4",
+          "itemId": "Subway_4",
           "name": "Soft Drink",
           "price": 1.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202112_0521_MediumCoke_Glass_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
-          "itemId":"Subway_5",
+          "itemId": "Subway_5",
           "name": "Italian BMT",
           "price": 7.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "subway_italian_bmt.jpg"
         },
         {
-          "itemId":"Subway_6",
+          "itemId": "Subway_6",
           "name": "Turkey Breast",
           "price": 6.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "subway_turkey_breast.jpg"
         },
         {
-          "itemId":"Subway_7",
+          "itemId": "Subway_7",
           "name": "Veggie Delite",
           "price": 5.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "subway_veggie_delite.jpg"
         }
       ]
     },
     {
-      "restaurantID":4,
+      "restaurantID": 4,
       "restaurantName": "KFC",
       "items": [
         {
-          "itemId":"KFC_1",
+          "itemId": "KFC_1",
           "name": "Original Recipe Chicken",
           "price": 5.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "kfc_original_recipe_chicken.jpg"
         },
         {
-          "itemId":"KFC_2",
+          "itemId": "KFC_2",
           "name": "Chicken Tenders",
           "price": 6.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "kfc_chicken_tenders.jpg"
         },
         {
-          "itemId":"KFC_3",
+          "itemId": "KFC_3",
           "name": "Fries",
           "price": 2.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "kfc_fries.jpg"
         },
         {
-          "itemId":"KFC_4",
+          "itemId": "KFC_4",
           "name": "Soft Drink",
           "price": 1.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202112_0521_MediumCoke_Glass_832x472:1-3-product-tile-desktop?wid=765&hei=472&dpr=off"
         },
         {
-          "itemId":"KFC_5",
+          "itemId": "KFC_5",
           "name": "Mashed Potatoes",
           "price": 3.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "kfc_mashed_potatoes.jpg"
         },
         {
-          "itemId":"KFC_6",
+          "itemId": "KFC_6",
           "name": "Coleslaw",
           "price": 2.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "kfc_coleslaw.jpg"
         },
         {
-          "itemId":"KFC_7",
+          "itemId": "KFC_7",
           "name": "Biscuit",
           "price": 1.49,
-          "quantity":0,
+          "quantity": 0,
           "photo": "kfc_biscuit.jpg"
         }
       ]
     },
     {
-      "restaurantID":5,
+      "restaurantID": 5,
       "restaurantName": "Pizza Hut",
       "items": [
         {
-          "itemId":"Hut_1",
+          "itemId": "Hut_1",
           "name": "Pepperoni Pizza",
           "price": 12.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_pepperoni_pizza.jpg"
         },
         {
-          "itemId":"Hut_2",
+          "itemId": "Hut_2",
           "name": "Margherita Pizza",
           "price": 11.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_margherita_pizza.jpg"
         },
         {
-          "itemId":"Hut_3",
+          "itemId": "Hut_3",
           "name": "Supreme Pizza",
           "price": 14.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_supreme_pizza.jpg"
         },
         {
-          "itemId":"Hut_4",
+          "itemId": "Hut_4",
           "name": "Cheese Breadsticks",
           "price": 6.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_cheese_breadsticks.jpg"
         },
         {
-          "itemId":"Hut_5",
+          "itemId": "Hut_5",
           "name": "Garlic Parmesan Wings",
           "price": 9.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_garlic_parmesan_wings.jpg"
         },
         {
-          "itemId":"Hut_6",
+          "itemId": "Hut_6",
           "name": "Caesar Salad",
           "price": 7.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_caesar_salad.jpg"
         },
         {
-          "itemId":"Hut_7",
+          "itemId": "Hut_7",
           "name": "Tiramisu",
           "price": 5.99,
-          "quantity":0,
+          "quantity": 0,
           "photo": "pizzahut_tiramisu.jpg"
         }
       ]
