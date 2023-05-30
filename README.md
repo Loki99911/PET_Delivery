@@ -39,7 +39,7 @@ To work locally, create a .env file and specify the necessary environment variab
 ***
 
 ## Developed by:
-_Juniog Frontend Developer - Nikita Kresik_:
+_Junior Frontend Developer - Nikita Kresik_:
 **[GitHub](https://github.com/Loki99911)**,
 **[Linkedin](https://www.linkedin.com/feed/)**
 ***
