@@ -34,7 +34,8 @@ The project is built with [React](https://react.dev/) using [Axios](https://axio
 ## Back-end part
 
 *https://github.com/Loki99911/delivery_api*
-To work locally, create a .env file and specify the necessary environment variables in it (following the example in .env.expample):
+
+To work locally, create a .env file and specify the necessary environment variables in it (following the example in .env.expample).
 ***
 
 ## Developed by:
