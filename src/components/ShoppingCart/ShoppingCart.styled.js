@@ -5,16 +5,6 @@ export const FormLayout = styled.div`
   flex-direction: column;
   align-items: flex-end;
   width: 100%;
-
-  /* @media screen and (min-width: 768px) {
-    width: 425px;
-    padding: 55px 85px;
-    margin-top: 80px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-top: 0;
-    margin-left: 160px;
-  } */
 `;
 export const FormWrapper = styled.div`
   display: grid;
@@ -135,6 +125,7 @@ export const FormCardWrapper = styled.li`
 export const FormCardImg = styled.img`
   display: inline-block;
   width: 200px;
+  height: 135px;
 `;
 
 export const FormCardTitle = styled.p``;

@@ -12,6 +12,7 @@ export const HeaderComp = () => {
         <HeaderList>
           <HeaderLink to={'/main'}>Shop</HeaderLink>
           <HeaderLink to={'/cart'}>Shopping Cart</HeaderLink>
+          <HeaderLink to={'/history'}>History</HeaderLink>
         </HeaderList>
       </HeaderWraper>
     </Header>

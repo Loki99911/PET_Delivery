@@ -15,6 +15,7 @@ export const CardWrapper = styled.li`
 export const CardImg = styled.img`
   display: inline-block;
   width: 300px;
+  height: 200px;
 `;
 
 export const CardTitle = styled.p``;

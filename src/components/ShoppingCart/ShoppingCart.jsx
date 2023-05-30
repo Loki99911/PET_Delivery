@@ -21,6 +21,7 @@ import {
 } from './ShoppingCart.styled';
 import { MealsContext } from 'components/App';
 import { FiTrash2 } from 'react-icons/fi';
+import axios from 'axios';
 const MealsValuesContext = React.createContext();
 
 const ShoppingCart = () => {
@@ -77,10 +78,21 @@ const ShoppingCart = () => {
             return errors;
           }}
           onSubmit={(values, { setSubmitting, resetForm }) => {
-            console.log(values,meals);
+            // console.log(values, meals);
+            const order = { ...values, meals:JSON.stringify(meals), totalValue };
+            console.log(order);
             resetForm();
             setSubmitting(false);
             setMeals([]);
+            axios
+              .post('/api/history', order)
+              .then(function (response) {
+                console.log(response);
+              })
+              .catch(function (error) {
+                console.log(error);
+              })
+              .finally(function () {});;
           }}
         >
           {({

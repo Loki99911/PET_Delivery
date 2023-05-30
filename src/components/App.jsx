@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { RestMenu } from './RestMenu/RestMenu';
 import ShoppingCart from './ShoppingCart/ShoppingCart';
 import axios from 'axios';
+import HistoryPage from './HistoryPage/HistoryPage';
 axios.defaults.baseURL = 'https://delivery-api-d9rc.onrender.com';
 const ShopContext = React.createContext();
 const MealsContext = React.createContext();
@@ -59,6 +60,7 @@ export const App = () => {
               <Route path={`:activeRestName`} element={<RestMenu />} />
             </Route>
             <Route path="cart" element={<ShoppingCart />} />
+            <Route path="history" element={<HistoryPage />} />
           </Route>
         </Routes>
       </MealsContext.Provider>

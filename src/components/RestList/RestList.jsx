@@ -4,6 +4,7 @@ import { MealsContext } from 'components/App';
 
 export const RestList = ({ restNames }) => {
   const { meals } = useContext(MealsContext);
+  console.log(restNames);
   return (
     <RestAside>
       <RestTitle>Shops:</RestTitle>
